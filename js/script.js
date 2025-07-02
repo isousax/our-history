@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const startDateISO = "2025-07-01T00:00:00";
+  const startDateISO = "2025-06-10T00:00:00";
 
   const startButton = document.querySelector(".start-btn");
   const loveContent = document.getElementById("loveContent");
@@ -66,23 +66,25 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   function checkAnniversary() {
-    const DateTime = luxon.DateTime;
-    const start = DateTime.fromISO(startDateISO);
-    const now = DateTime.now();
+  const DateTime = luxon.DateTime;
+  const start = DateTime.fromISO(startDateISO);
+  const now = DateTime.now();
 
-    const isAnnual = now.month === start.month && now.day === start.day;
-    const isMonthly = !isAnnual && now.day === start.day;
+  const isMonthlyAnniversary = now.day === start.day;
 
-    stopAnimations();
+  stopAnimations();
 
-    if (isAnnual || isMonthly) {
-      document.body.classList.add("special-theme");
-      triggerHearts();
-    } else {
-      document.body.classList.remove("special-theme");
-      triggerSparkles();
-    }
+  if (isMonthlyAnniversary) {
+    document.body.classList.add("special-theme");
+    triggerHearts();
+    console.log("especial")
+  } else {
+    document.body.classList.remove("special-theme");
+    triggerSparkles();
+    console.log("normal")
   }
+}
+
 
   function updateCounter() {
     const DateTime = luxon.DateTime;
