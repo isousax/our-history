@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nossa História</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" href="img/favicon.png" type="image/png">
+  
+</head>
+<body>
+  <div class="start-screen">
+    <button class="start-btn" onclick="startLove()" aria-label="Começar a história">🤍 Clique</button>
+  </div>
+
+  <div class="container" id="loveContent">
+    <!-- Carrossel -->
+    <div class="swiper">
+      <div class="swiper-wrapper" id="swiperWrapper">
+      </div>
+    </div>
+
+    <div class="names">Italo & Andreina</div>
+    <div class="text">
+      Não é sobre prometer perfeição… é sobre escolher a mesma pessoa todos os dias, com carinho, paciência e verdade.
+    </div>
+    <div class="counter" id="timeTogether">Contando...</div>
+
+    <div class="video-container" id="videoContainer"></div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/luxon@3/build/global/luxon.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
