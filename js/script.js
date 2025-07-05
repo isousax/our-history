@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const timeTogether = document.getElementById("timeTogether");
     const startScreen = document.querySelector(".start-screen");
 
-    const imageNames = ["1.png", "2.png", "3.png"];
+    const imageNames = ["1.png", "2.png", "3.png","4.png"];
     const GITHUB_BASE = "https://raw.githubusercontent.com/isousax/static-assets/main/projects/our-history/";
 
     let heartsInterval = null;
