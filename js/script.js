@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-    const startDateISO = "2025-06-10T00:00:00";
+    const startDateISO = "2025-07-04T00:00:00";
 
     const startButton = document.querySelector(".start-btn");
     const loveContent = document.getElementById("loveContent");
